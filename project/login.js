@@ -3,7 +3,6 @@ const btnSelectCadastrar = $("#btn-select-cadastrar");
 const entrarForm = $("#entrar-form");
 const cadastrarForm = $("#cadastrar-form");
 
-
 $(document).ready(function () {
     // Inicialmente, exibir o formulário de login e ocultar o de registro
     entrarForm.show();

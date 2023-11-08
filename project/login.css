@@ -72,7 +72,6 @@ main .card {
 }
 
 .btn {
-    background-color: transparent;
     border: 1px solid #007bff;
     color: #007bff;
     padding: 10px 20px;
@@ -91,4 +90,9 @@ main ul li {
 
 li a {
     color: #6c757d;
+    
+}
+
+main a {
+    text-decoration: none;
 }
