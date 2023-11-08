@@ -302,6 +302,7 @@ body{
 	width:100%;
 }
 .get-quote{
+	text-align: end;
 	margin-top:12px;
 }
 .get-quote .btn{
