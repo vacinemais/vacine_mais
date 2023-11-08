@@ -1,7 +1,6 @@
-header > div, main > div {
+header > div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     width: 100vw;
@@ -10,6 +9,14 @@ header > div, main > div {
 
 header span {
     color: #007bff;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 88vh;
 }
 
 form {
@@ -72,4 +79,16 @@ main .card {
     cursor: pointer;
 }
 
+main ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
 
+main ul li {
+    margin: 5px;
+}
+
+li a {
+    color: #6c757d;
+}
