@@ -20,20 +20,15 @@
 
 .darkMode {
     background-color: var(--cor-de-fundo-dark);
-    color: var(--cor-do-texto-dark);
+    
 }
 
 .darkMode .card {
     background-color: var(--cor-da-borda-dark);
-    color: var(--cor-do-texto-dark);
 }
 
 .darkMode .card a {
     color: var(--cor-primaria);
-}
-
-.darkMode a {
-    color: var(--cor-do-texto-dark);
 }
 
 .darkMode .topbar {
@@ -45,18 +40,11 @@
     border-color: var(--cor-primaria);
 }
 
-.darkMode input {
+.darkMode input, .darkMode input:focus{
     background-color: #8888;
     border-color: #8888;
-    color: #fff; 
 }
 
-.darkMode input:focus {
-    background-color: #8888;
-    border-color: #8888;
-    color: var(--cor-do-texto-dark); 
-}
-
-.darkMode input::placeholder {
+.darkMode, .darkMode .card, .darkMode a, .darkMode input, .darkMode input:focus, .darkMode input::placeholder {
     color: var(--cor-do-texto-dark);
 }
