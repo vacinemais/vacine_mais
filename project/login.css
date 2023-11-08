@@ -1,0 +1,87 @@
+header > div, main > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+header span {
+    color: #007bff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form > input {
+    margin: 10px 0 10px 0;
+}
+
+form > button {
+    display: flex;
+    width: 70%;
+    margin: 0 0 5px 0;
+}
+
+form .row {
+    width: 29vw;
+    justify-content: end;
+    margin: 0 0 15px 0;
+}
+
+.google p {
+    margin: 0;
+}
+
+.title {
+	display: flex;
+	margin-top: 18px;
+    width: 200px;
+}
+
+.title i {
+	font-size: 200%;
+	margin: 0 10px 0 0;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .card {
+    padding: 30px;
+}
+
+.form-select > button {
+    width: 49%;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-select-btn.active {
+    background-color: #007bff;
+    opacity: 1;
+    color: #fff;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.form-select-btn.inactive {
+    opacity: 0.4;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s, opacity 0.3s;
+}
