@@ -1,29 +1,27 @@
-header > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
-    margin-bottom: 20px;
+body a {
+    text-decoration: none;
 }
 
 header span {
     color: #007bff;
 }
 
-.main-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 88vh;
+header a {
+    color: black;
 }
 
-form {
+main .card {
+    padding: 30px;
+}
+
+main ul {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+main ul li {
+    margin: 5px;
 }
 
 form > input {
@@ -31,19 +29,28 @@ form > input {
 }
 
 form > button {
-    display: flex;
     width: 70%;
     margin: 0 0 5px 0;
 }
 
 form .row {
-    width: 29vw;
     justify-content: end;
     margin: 0 0 15px 0;
 }
 
-.google p {
-    margin: 0;
+li a {
+    color: #6c757d;
+}
+
+header > div {
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+header > div, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
@@ -57,44 +64,26 @@ form .row {
 	margin: 0 10px 0 0;
 }
 
-.subtitle{
+.subtitle, .main-content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-main .card {
-    padding: 30px;
-}
-
-.form-select > button {
-    width: 49%;
-}
-
-.btn {
-    border: 1px solid #007bff;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-main ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-main ul li {
-    margin: 5px;
+.main-content {
+    text-align: center;
+    height: 88vh;
 }
 
 .card a:hover {
     color: #0a58ca;
 }
 
-li a {
-    color: #6c757d;
+.form-select > button {
+    width: 49%;
 }
 
-main a {
-    text-decoration: none;
+.google p {
+    margin: 0;
 }
