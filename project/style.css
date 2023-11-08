@@ -302,14 +302,29 @@ body{
 	width:100%;
 }
 .get-quote{
+	text-align: end;
 	margin-top:12px;
 }
 .get-quote .btn{
 	color:#fff;
 }
 .header .logo {
+	display: flex;
 	float: left;
+	align-items: center;
 	margin-top: 18px;
+}
+.header .logo i {
+	font-size: 200%;
+	margin: 0 10px 0 0;
+}
+
+.header .logo h2 {
+	margin: 0;
+}
+
+.header .logo h2 span {
+	color: #1A76D1;
 }
 .header .navbar {
 	background: none;

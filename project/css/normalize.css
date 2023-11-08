@@ -16,20 +16,25 @@ html {
 	-ms-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 }
+
 html,body {
 	height: 100%;
 	margin: 0;
 }
+
 *{
 	padding:0;
 	margin:0;
 }
+
 body {
 	margin: 0;
 }
+
 img{
 	max-width:100%;
 }
+
 article,
 aside,
 details,
@@ -44,123 +49,132 @@ section,
 summary {
 	display: block;
 }
-audio,
-canvas,
-progress,
-video {
+
+audio, canvas, progress, video {
 	display: inline-block;
 	vertical-align: baseline;
 }
+
 audio:not([controls]) {
 	display: none;
 	height: 0;
 }
-[hidden],
-template {
+
+[hidden], template {
 	display: none;
 }
+
 a {
 	text-decoration:none;
 }
-a:active,
-a:hover {
+
+a:active, a:hover {
 	outline: 0;
 	text-decoration:none;
 }
+
 .slicknav_menu{
 	display:none;
 }
+
 .table {
 	display: table;
 	width: 100%;
 	height: 100%;
 }
+
 .table-cell {
 	display: table-cell;
 	vertical-align: middle;
 }
+
 img {
 	border: 0;
 }
+
 svg:not(:root) {
 	overflow: hidden;
 }
+
 figure {
 	margin: 1em 40px;
 }
+
 hr {
 	box-sizing: content-box;
 	height: 0;
 }
+
 pre {
 	overflow: auto;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
+
+button, input, optgroup, select, textarea {
 	color: inherit;
 	font: inherit;
 	margin: 0;
 }
+
 button {
 	overflow: visible;
 }
-button,
-select {
+
+button, select {
 	text-transform: none;
 }
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
 	-webkit-appearance: button;
 	cursor: pointer;
 }
-button[disabled],
-html input[disabled] {
+
+button[disabled], html input[disabled] {
 	cursor: default;
 }
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+
+button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
+
 input {
 	line-height: normal;
 }
-input[type="checkbox"],
-input[type="radio"] {
+
+input[type="checkbox"], input[type="radio"] {
 	box-sizing: border-box;
 	padding: 0;
 }
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
 	height: auto;
 }
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
+
 legend {
 	border: 0;
 	padding: 0;
 }
+
 textarea {
 	overflow: auto;
 }
+
 optgroup {
 	font-weight: bold;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-td,
-th {
+
+td, th {
 	padding: 0;
 }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -176,30 +190,37 @@ textarea {
 	font-size: 14px;
 	line-height: 24px;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	margin: 0;
 }
+
 p {
 	color:#757575;
 	margin: 0;
 	line-height:24px;
 	font-weight:400;
 }
+
 a,button,input{
 	font-weight:400;
 }
+
 img,a,input,h1, h2, h3, h4, h5, h6{
 	-webkit-transition:all 0.4s ease;
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
 }
+
 dfn, cite, em, i {
 	font-style: italic;
 }
+
 address {
 	margin: 0 0 1.5em;
 }
+
 pre {
 	background: #eee;
 	font-family: 'Poppins', sans-serif;
@@ -211,6 +232,7 @@ pre {
 	overflow: auto;
 	padding: 1.6em;
 }
+
 code, kbd, tt, var {
 	font-family: 'Poppins', sans-serif;
 	font-size: 15px;
@@ -236,6 +258,7 @@ h1,h2,h3,h4,h5,h6{
 	font-weight:500;
 	color:#2C2D3F;
 }
+
 a,button{
 	-webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
@@ -244,9 +267,11 @@ a,button{
 	box-shadow:none;
 	text-decoration:none;
 }
+
 a:hover{
 	text-decoration:none;
 }
+
 /*================================================
 Preloader Area CSS
 =================================================*/
@@ -444,9 +469,11 @@ Preloader Area CSS
 	border-radius: 0;
 	border-radius:4px;
 }
+
 .btn:hover{
 	color:#fff;
 }
+
 .btn:before{
 	content: "";
 	position: absolute;
@@ -465,18 +492,22 @@ Preloader Area CSS
 	transition:all 0.4s ease;
 	border-radius:4px;
 }
+
 .btn:hover:before{
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
+
 .section{
 	padding:100px 0;
 }
+
 .section-title{
 	text-align: center;
     margin-bottom: 60px;
     padding: 0 250px;
 }
+
 .section-title h2 {
 	font-size: 32px;
 	font-weight: 600;
@@ -485,15 +516,18 @@ Preloader Area CSS
 	position: relative;
 	color: #2C2D3F;
 }
+
 .section-title p{
 	font-size:15px;
 	color:#888;
 	margin-top:15px;
 }
+
 /* Overlay */
 .overlay{
 	position:relative;
 }
+
 .overlay:before{
 	position:absolute;
 	content:"";
@@ -504,6 +538,7 @@ Preloader Area CSS
 	background:#1a76d1;
 	opacity:0.8;
 }
+
 /* Bread Crumbs */
 .breadcrumbs {
 	background-image: url('../img/bread-bg.jpg');
@@ -513,10 +548,12 @@ Preloader Area CSS
 	position: relative;
 	padding: 120px 0px;
 }
+
 .breadcrumbs .bread-inner{
 	z-index:22;
 	text-align:center;
 }
+
 .breadcrumbs h2{
 	color: #fff;
 	text-transform:capitalize;
@@ -525,10 +562,12 @@ Preloader Area CSS
 	margin: 0;
 	padding: 0;
 }
+
 .breadcrumbs .bread-list {
 	display: inline-block;
 	margin-top: 20px;
 }
+
 .breadcrumbs ul li{
 	display: inline-block;
 	position: relative;
@@ -537,12 +576,14 @@ Preloader Area CSS
 	font-weight: 500;
 	text-transform: capitalize;
 }
+
 .breadcrumbs ul li i {
 	margin: 0px 10px;
 	font-size: 14px;
 	font-weight: 600;
 	color:#fff;
 }
+
 .breadcrumbs ul li a {
 	color: #fff;
 	font-size: 15px;
@@ -551,29 +592,36 @@ Preloader Area CSS
 	margin:0;
 	padding:0;
 }
+
 .breadcrumbs ul li a:hover{
 	color:#2C2D3F;
 }
+
 .breadcrumbs ul li.active a {
 	color: #fff;
 	display: inline-block;
 }
+
 /* Pagination CSS */
 .pagination {
 	text-align: left;
 	margin: 50px 0 0 0;
 	display:block;
 }
+
 .pagination.center {
 	text-align: center;
 }
+
 .pagination .pagination-list li {
 	margin-right: 5px;
 	display: inline-block;
 }
+
 .pagination .pagination-list li:last-child{
 	margin-right:0px;
 }
+
 .pagination .pagination-list li a {
 	background: #F6F7FB;
 	color: #666;
@@ -583,15 +631,19 @@ Preloader Area CSS
 	font-size: 16px;
 	border-radius: 4px;
 }
+
 .pagination .pagination-list li.active a,.pagination .pagination-list li:hover a{
 	background: #1A76D1;
 	color: #fff;
 	border-color: transparent;
 }
+
 .pagination .pagination-list li a i{
 	font-size:15px;
 }
-.pagination .pagination-list li a i{}
+
+/* .pagination .pagination-list li a i{} */
+
 .blog-grids.pagination{
 	margin-top:50px;
 	text-align:center;
@@ -604,9 +656,7 @@ html {
 	box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
 	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
 }
@@ -630,8 +680,7 @@ ul,ul li{
 	margin:0;
 }
 
-li > ul,
-li > ol {
+li > ul, li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
