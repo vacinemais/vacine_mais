@@ -72,16 +72,4 @@ main .card {
     cursor: pointer;
 }
 
-.form-select-btn.active {
-    background-color: #007bff;
-    opacity: 1;
-    color: #fff;
-    transition: background-color 0.3s, opacity 0.3s;
-}
 
-.form-select-btn.inactive {
-    opacity: 0.4;
-    color: #fff;
-    background-color: #007bff;
-    transition: background-color 0.3s, opacity 0.3s;
-}

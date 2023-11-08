@@ -16,59 +16,59 @@
             <div class="title">
                 <i class="fa-solid fa-syringe"></i><h2>Vacine<span>Mais</span></h2>
             </div>
-            <div class="subtitle">
-            
-                <p class="col-lg-7 text-muted">Cadastre-se para ficar por dentro de todas as noticias relacionadas à vacinas, além de ter acesso à diversas funcionalidades feitas especialmente para você!</p>
-            </div>
         </div>
     </header>
     <main>
         <div>
             <div class="card col-lg-4">
-                <div class="form-select">
-                    <button class="form-select-btn btn active" id="btn-select-entrar">Entrar</button>
-                    <button class="form-select-btn btn inactive" id="btn-select-cadastrar">Cadastrar</button>
+                <div id="entrar-form">
+                    <h5 class="card-title">Entrar</h5>
+                    <p class="card-subtitle text-muted mb-4">Entre para ter acesso à diversas funcionalidades feitas especialmente para você!</p>
+                    <form class="content" >
+                        <input type="email" class="form-control" id="ip-email" placeholder="Email">
+                        <input type="password" class="form-control" id="ip-senha" placeholder="Senha">
+                        <div class="row">
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+                        <div>
+                        </div>
+                        <button type="button" class="btn btn-primary">Entrar</button>
+                        <div class="text-center">
+                            <p>Não tem uma conta? <a href="#" id="btn-select-cadastrar">Cadastre-se</a></p>
+                            
+                            <div class="google">
+                                <p>Entrar com:</p>
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                  <i class="fab fa-google"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-
-                <form class="content" id="entrar-form">
-                    <input type="email" class="form-control" id="ip-email" placeholder="Email">
-                    <input type="password" class="form-control" id="ip-senha" placeholder="Senha">
-                    <div class="row">
-                        <a href="#">Esqueceu a senha?</a>
-                    </div>
-                    <div>
-                    </div>
-                    <button type="button" class="btn btn-primary">Entrar</button>
-                    <div class="text-center">
-                        <p>Não tem uma conta? <a href="#!">Cadastre-se</a></p>
+                <div id="cadastrar-form">
+                    <h5 class="card-title">Cadastrar</h5>
+                    <p class="card-subtitle text-muted mb-4">Cadastre-se para ter acesso à diversas funcionalidades feitas especialmente para você!</p>
+                    <form class="content">
+                        <input type="text" class="form-control" id="ip-nome" placeholder="Nome">
+                        <input type="email" class="form-control" id="ip-email" placeholder="Email">
+                        <input type="password" class="form-control" id="ip-senha" placeholder="Senha">
+                        <input type="password" class="form-control" id="ip-confirmar-senha" placeholder="Confirmar Senha">
                         
+                        <button type="button" class="btn btn-primary">Cadastrar</button>
+                        
+                        <div class="text-center">
+                            <p>Já tem uma conta? <a href="#" id="btn-select-entrar">Faça login</a></p>
+                        </div>
+                    
                         <div class="google">
-                            <p>Entrar com:</p>
+                            <p>Cadastrar com:</p>
                             <button type="button" class="btn btn-link btn-floating mx-1">
-                              <i class="fab fa-google"></i>
+                                <i class="fab fa-google"></i>
                             </button>
                         </div>
-                    </div>
-                </form>
-                <form class="content" id="cadastrar-form">
-                    <input type="text" class="form-control" id="ip-nome" placeholder="Nome">
-                    <input type="email" class="form-control" id="ip-email" placeholder="Email">
-                    <input type="password" class="form-control" id="ip-senha" placeholder="Senha">
-                    <input type="password" class="form-control" id="ip-confirmar-senha" placeholder="Confirmar Senha">
-                    
-                    <button type="button" class="btn btn-primary">Cadastrar</button>
-                    
-                    <div class="text-center">
-                        <p>Já tem uma conta? <a href="#">Faça login</a></p>
-                    </div>
+                    </form>
+                </div>
                 
-                    <div class="google">
-                        <p>Cadastrar com:</p>
-                        <button type="button" class="btn btn-link btn-floating mx-1">
-                            <i class="fab fa-google"></i>
-                        </button>
-                    </div>
-                </form>
                 
             </div>
         </div>
