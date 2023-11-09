@@ -147,7 +147,7 @@ function atualizarLista(array) {
         const dateCell = $("<td>").text(item.data);
 
         const editButton = $("<button>")
-            .addClass("btn btn-sm btn-outline-primary")
+            .addClass("btn btn-sm btn-outline-primary mr-2")
             .text("Editar");
 
         const deleteButton = $("<button>")
