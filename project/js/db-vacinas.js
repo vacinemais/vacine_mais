@@ -98,4 +98,10 @@ function atualizarLista(array) {
 
 $(document).ready(function() {
     atualizarLista(vacinasdb);
+
+    $('table').DataTable({
+        columnDefs: [
+            { type: 'date', targets: 'data-header' }
+        ]
+    });
 });
