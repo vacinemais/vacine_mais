@@ -169,19 +169,27 @@ function atualizarLista(array) {
     });
 }
 
+function configurarTabela() {
+
+}
+
 $(document).ready(function() {
     atualizarLista(vacinasdb);
 
+    const tabela = $('table');
+
     $('table').DataTable({
-        "language": {
-            "url": "//cdn.datatables.net/plug-ins/1.10.25/i18n/Portuguese-Brasil.json"
+        "oLanguage": {
+            "sSearch": ""
         },
         "lengthChange": false,
         "pageLength": -1, 
         "paging": false,
         "info": false, 
-        "searching": false,
+        "searching": true,
         "scrollY": "350px",
         "scrollCollapse": true,
     });
-});
+
+    $('.dataTables_filter label input').addClass('form-control form-control-sm mt-3').attr('placeholder', 'Qual vacina você procura?'); 
+}); 

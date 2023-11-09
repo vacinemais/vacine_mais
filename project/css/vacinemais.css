@@ -2,3 +2,13 @@
 table.dataTable thead th, table.dataTable thead td {
     border: 0;
 }
+
+.dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+
+.dataTables_filter label {
+    width: 98%;
+}
