@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	
 	<!-- Table CSS -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
 </head>
@@ -113,7 +114,7 @@
 					<h2>Histórico de Vacinas</h1>
 						<input id="input-filtro" type="text" class="form-control mt-3 mb-3"
 							placeholder="Qual vacina você procura?">
-						<table class="table table-hover table-striped">
+						<table class="table table-hover table-striped" id="tabela-historico">
 							<thead class="table-primary">
 								<tr>
 									<th>#ID</th>
@@ -247,6 +248,7 @@
 	<!-- Project JS -->
 	<script src="js/main.js"></script>
 	<script src="js/db-vacinas.js"></script>
+	<link rel="stylesheet" href="css/vacinemais.css">
 </body>
 
 </html>

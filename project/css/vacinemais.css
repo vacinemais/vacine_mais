@@ -1,0 +1,4 @@
+.dataTables_wrapper.no-footer .dataTables_scrollBody,
+table.dataTable thead th, table.dataTable thead td {
+    border: 0;
+}

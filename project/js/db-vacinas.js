@@ -173,8 +173,15 @@ $(document).ready(function() {
     atualizarLista(vacinasdb);
 
     $('table').DataTable({
-        columnDefs: [
-            { type: 'date', targets: 'data-header' }
-        ]
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.25/i18n/Portuguese-Brasil.json"
+        },
+        "lengthChange": false,
+        "pageLength": -1, 
+        "paging": false,
+        "info": false, 
+        "searching": false,
+        "scrollY": "350px",
+        "scrollCollapse": true,
     });
 });
