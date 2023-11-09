@@ -121,7 +121,7 @@
 							</div>
 							<div class="col-lg-3 col-12">
 								<div class="get-quote">
-									<a href="appointment.html" class="btn">Entrar</a>
+									<a href="appointment.html" class="btn btn-outline-primary">Entrar</a>
 								</div>
 							</div>
 						</div>
@@ -137,11 +137,11 @@
 		<section class="">
 			<div class="container">
 				<div class=" ">
-					<div class="card card-body mt-5">
+					<div class="card card-body mt-4 mb-5">
 						<h2>Histórico de Vacinas</h1>
 						
 			
-						<input id="input-busca" type="text" class="form-control mt-3 mb-3" placeholder="O que você procura?">
+						<input id="input-filtro" type="text" class="form-control mt-3 mb-3" placeholder="Qual vacina você procura?">
 			
 						<table class="table table-hover table-striped">
 							<thead class="table-primary">
@@ -154,7 +154,7 @@
 									<th>Ações</th>
 								</tr>
 							</thead>
-							<tbody id="tabela-bebidas">
+							<tbody id="tabela-vacinas">
 								<tr>
 									<td>1</td>
 									<td>Sarampo</td>
@@ -162,8 +162,8 @@
 									<td>Fiocruz</td>
 									<td>20/10/2009</td>
 									<td>
-										<button class="btn btn-sm ">Editar</button>
-										<button class="btn btn-sm ">Excluir</button>
+										<button class="btn btn-sm btn-outline-primary ">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
 									</td>
 								</tr>
 								<tr>
@@ -173,8 +173,8 @@
 									<td>Instituto Butantan</td>
 									<td>20/12/2009</td>
 									<td>
-										<button class="btn btn-sm ">Editar</button>
-										<button class="btn btn-sm ">Excluir</button>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
 									</td>
 								</tr>
 								<tr>
@@ -184,8 +184,8 @@
 									<td>Instituto Butantan</td>
 									<td>05/01/2010</td>
 									<td>
-										<button class="btn btn-sm ">Editar</button>
-										<button class="btn btn-sm ">Excluir</button>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
 									</td>
 								</tr>
 								<tr>
@@ -195,8 +195,8 @@
 									<td>Instituto Butantan</td>
 									<td>20/02/2010</td>
 									<td>
-										<button class="btn btn-sm">Editar</button>
-										<button class="btn btn-sm">Excluir</button>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
 									</td>
 								</tr>
 								<tr>
@@ -206,8 +206,8 @@
 									<td>Fiocruz</td>
 									<td>05/04/2010</td>
 									<td>
-										<button class="btn btn-sm">Editar</button>
-										<button class="btn btn-sm">Excluir</button>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
 									</td>
 								</tr>
 								<tr>
@@ -217,8 +217,8 @@
 									<td>Fiocruz</td>
 									<td>17/10/2011</td>
 									<td>
-										<button class="btn btn-sm">Editar</button>
-										<button class="btn btn-sm">Excluir</button>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
 									</td>
 								</tr>
 								<tr>
@@ -228,8 +228,8 @@
 									<td>Instituto Butantan</td>
 									<td>26/01/2012</td>
 									<td>
-										<button class="btn btn-sm">Editar</button>
-										<button class="btn btn-sm">Excluir</button>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
 									</td>
 								</tr>
 								<tr>
@@ -239,8 +239,8 @@
 									<td>Instituto Butantan</td>
 									<td>26/02/2012</td>
 									<td>
-										<button class="btn btn-sm">Editar</button>
-										<button class="btn btn-sm">Excluir</button>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
 									</td>
 								</tr>
 
@@ -251,8 +251,8 @@
 									<td>Instituto Butantan</td>
 									<td>26/07/2012</td>
 									<td>
-										<button class="btn btn-sm">Editar</button>
-										<button class="btn btn-sm">Excluir</button>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
 									</td>
 								</tr>
 
@@ -263,8 +263,8 @@
 									<td>Instituto Butantan</td>
 									<td>07/02/2020</td>
 									<td>
-										<button class="btn btn-sm">Editar</button>
-										<button class="btn btn-sm">Excluir</button>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
 									</td>
 								</tr>
 							</tbody>
@@ -399,5 +399,7 @@
 		<script src="js/jquery.counterup.min.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
+
+		<script src="js/filtroTabela.js"></script>
     </body>
 </html>
