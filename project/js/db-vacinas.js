@@ -194,4 +194,6 @@ $(document).ready(function() {
     });
 
     $('.dataTables_filter label input').addClass('form-control form-control-sm mt-3').attr('placeholder', 'Qual vacina você procura?'); 
+
+    
 }); 
