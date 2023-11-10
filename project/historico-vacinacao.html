@@ -109,49 +109,49 @@
 		</div>
 	</header>
 	<main class="container">
+		<div class="modal fade" id="adicionar-vacina-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal-title">Adicionar Vacina</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>Preencha os campos abaixo para adicionar uma nova vacina ao seu histórico de vacinação!
+						</p>
+						<form id="form-adicionar-vacina">
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="ipVacinaNome">Nome</label>
+									<input type="text" class="form-control" id="ipVacinaNome" placeholder="Nome" >
+								</div>
+								<div class="form-group col-md-6">
+									<label for="ipVacinaDose">Dose</label>
+									<input type="number" class="form-control" id="ipVacinaDose" placeholder="Dose">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="ipVacinaFabricante">Fabricante</label>
+								<input type="text" class="form-control" id="ipVacinaFabricante"
+									placeholder="Fabricante">
+							</div>
+							<div class="form-group">
+								<label for="ipVacinaData">Data</label>
+								<input type="date" class="form-control" id="ipVacinaData">
+							</div>
+							<button type="submit" class="btn btn-primary">Adicionar</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="card card-body" id="carteira-vacinacao">
 			<div id="carteira-vacinacao-title">
 				<h2>Histórico de Vacinas</h1>
 					<button class="add-button btn btn-success" type="button" data-bs-toggle="modal"
-						data-bs-target="#reg-modal">
+						data-bs-target="#adicionar-vacina-modal">
 						<i class="fa-solid fa-plus"></i>
 					</button>
-			</div>
-			<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="modal-title">Adicionar Vacina</h5>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-							<p>Preencha os campos abaixo para adicionar uma nova vacina ao seu histórico de vacinação!
-							</p>
-							<form id="form-adicionar-vacina">
-								<div class="form-row">
-									<div class="form-group col-md-6">
-										<label for="ipVacinaNome">Nome</label>
-										<input type="text" class="form-control" id="ipVacinaNome" placeholder="Nome" >
-									</div>
-									<div class="form-group col-md-6">
-										<label for="ipVacinaDose">Dose</label>
-										<input type="number" class="form-control" id="ipVacinaDose" placeholder="Dose">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="ipVacinaFabricante">Fabricante</label>
-									<input type="text" class="form-control" id="ipVacinaFabricante"
-										placeholder="Fabricante">
-								</div>
-								<div class="form-group">
-									<label for="ipVacinaData">Data</label>
-									<input type="date" class="form-control" id="ipVacinaData">
-								</div>
-								<button type="submit" class="btn btn-primary">Adicionar</button>
-							</form>
-						</div>
-					</div>
-				</div>
 			</div>
 			<div id="carteira-vacinacao-body">
 				<table class="table table-hover table-striped">
@@ -168,6 +168,42 @@
 					<tbody>
 					</tbody>
 				</table>
+			</div>
+		</div>
+		<div class="modal fade" id="editar-vacina-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal-title">Editar Vacina</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>Modifique os campos abaixo para alterar os dados de uma vacina previamente cadastrada!
+						</p>
+						<form id="form-adicionar-vacina">
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="ipVacinaNome">Nome</label>
+									<input type="text" class="form-control" id="ipVacinaNome" placeholder="Nome" >
+								</div>
+								<div class="form-group col-md-6">
+									<label for="ipVacinaDose">Dose</label>
+									<input type="number" class="form-control" id="ipVacinaDose" placeholder="Dose">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="ipVacinaFabricante">Fabricante</label>
+								<input type="text" class="form-control" id="ipVacinaFabricante"
+									placeholder="Fabricante">
+							</div>
+							<div class="form-group">
+								<label for="ipVacinaData">Data</label>
+								<input type="date" class="form-control" id="ipVacinaData">
+							</div>
+							<button type="submit" class="btn btn-primary">Salvar</button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>

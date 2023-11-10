@@ -148,6 +148,8 @@ function atualizarLista(array) {
 
         const editButton = $("<button>")
             .addClass("btn btn-sm btn-outline-primary mr-2")
+            .attr("data-bs-toggle", "modal")
+            .attr("data-bs-target", "#editar-vacina-modal")
             .text("Editar");
 
         const deleteButton = $("<button>")
