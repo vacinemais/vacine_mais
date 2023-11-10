@@ -3,133 +3,133 @@ var vacinasdb = [
       "doenca": "Sarampo",
       "dose": "Dose 1",
       "fabricante": "Fiocruz",
-      "data": "20/10/2009"
+      "data": "2009/10/20"
     },
     {
       "doenca": "Hepatite A",
       "dose": "Dose 1",
       "fabricante": "Instituto Butantan",
-      "data": "20/12/2009"
+      "data": "2009/12/20"
     },
     {
       "doenca": "Tétano",
       "dose": "Dose 1",
       "fabricante": "Instituto Butantan",
-      "data": "05/01/2010"
+      "data": "2010/01/05"
     },
     {
       "doenca": "Hepatite A",
       "dose": "Dose 2",
       "fabricante": "Instituto Butantan",
-      "data": "20/02/2010"
+      "data": "2010/02/20"
     },
     {
       "doenca": "Febre Amarela",
       "dose": "Dose 1",
       "fabricante": "Fiocruz",
-      "data": "05/04/2010"
+      "data": "2010/04/05"
     },
     {
       "doenca": "Tríplice Viral",
       "dose": "Dose 1",
       "fabricante": "Fiocruz",
-      "data": "17/10/2011"
+      "data": "2011/10/17"
     },
     {
       "doenca": "Hepatite B",
       "dose": "Dose 1",
       "fabricante": "Instituto Butantan",
-      "data": "26/01/2012"
+      "data": "2012/01/26"
     },
     {
       "doenca": "Hepatite B",
       "dose": "Dose 2",
       "fabricante": "Instituto Butantan",
-      "data": "26/02/2012"
+      "data": "2012/02/26"
     },
     {
       "doenca": "Hepatite B",
       "dose": "Dose 3",
       "fabricante": "Instituto Butantan",
-      "data": "26/07/2012"
+      "data": "2012/07/26"
     },
     {
       "doenca": "Tétano",
       "dose": "Dose 2",
       "fabricante": "Instituto Butantan",
-      "data": "07/02/2020"
+      "data": "2020/02/07"
     },
     {
       "doenca": "Meningite B",
       "dose": "Dose 1",
       "fabricante": "BioNTech",
-      "data": "15/05/2022"
+      "data": "2022/05/15"
     },
     {
       "doenca": "Pneumonia",
       "dose": "Dose 1",
       "fabricante": "Moderna",
-      "data": "25/09/2022"
+      "data": "2022/09/25"
     },
     {
       "doenca": "Covid-19",
       "dose": "Dose 1",
       "fabricante": "Pfizer",
-      "data": "10/12/2022"
+      "data": "2022/12/10"
     },
     {
         "doenca": "Rubéola",
         "dose": "Dose 1",
         "fabricante": "Fiocruz",
-        "data": "15/03/2013"
+        "data": "2013/03/15"
     },
     {
         "doenca": "Hepatite A",
         "dose": "Dose 3",
         "fabricante": "Instituto Butantan",
-        "data": "18/07/2013"
+        "data": "2013/07/18"
     },
     {
         "doenca": "Caxumba",
         "dose": "Dose 1",
         "fabricante": "Fiocruz",
-        "data": "22/11/2013"
+        "data": "2013/11/22"
     },
     {
         "doenca": "Difteria",
         "dose": "Dose 1",
         "fabricante": "Instituto Butantan",
-        "data": "02/04/2014"
+        "data": "2014/04/02"
     },
     {
         "doenca": "Hepatite B",
         "dose": "Dose 4",
         "fabricante": "Instituto Butantan",
-        "data": "10/08/2014"
+        "data": "2014/08/10"
     },
     {
         "doenca": "Tétano",
         "dose": "Dose 3",
         "fabricante": "Instituto Butantan",
-        "data": "15/12/2014"
+        "data": "2014/12/15"
     },
     {
         "doenca": "Pneumonia",
         "dose": "Dose 2",
         "fabricante": "Moderna",
-        "data": "21/03/2015"
+        "data": "2015/03/21"
     },
     {
         "doenca": "Tríplice Viral",
         "dose": "Dose 2",
         "fabricante": "Fiocruz",
-        "data": "30/07/2015"
+        "data": "2015/07/30"
     },
     {
         "doenca": "Covid-19",
         "dose": "Dose 2",
         "fabricante": "Pfizer",
-        "data": "05/02/2023"
+        "data": "2023/02/05"
     }
 ];
   
@@ -155,6 +155,8 @@ function atualizarLista(array) {
             .text("Excluir");
 
         const actionsCell = $("<td>").append(editButton, deleteButton);
+
+        
 
         row.append(
             serialNumberCell,
