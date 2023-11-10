@@ -1,0 +1,50 @@
+:root {
+    --cor-primaria: #007bff;
+    --cor-de-fundo-light: #f5f5f5;
+    --cor-de-fundo-dark: #2b2b2b;
+    --cor-do-texto-light: #0000;
+    --cor-do-texto-dark: #f5f5f5;
+    --cor-da-borda-light: #e3e3e3;
+    --cor-da-borda-dark: #6666;
+    --cor-botao-light: #2b2b2b;
+}
+
+#dark-mode-btn {
+    background-color: var(--cor-botao-light);
+    border-color: var(--cor-botao-light);
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    z-index: 999;
+}
+
+.darkMode {
+    background-color: var(--cor-de-fundo-dark);
+    
+}
+
+.darkMode .card {
+    background-color: var(--cor-da-borda-dark);
+}
+
+.darkMode .card a {
+    color: var(--cor-primaria);
+}
+
+.darkMode .topbar {
+    border-color: var(--cor-da-borda-dark);
+}
+
+.darkMode #dark-mode-btn {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.darkMode input, .darkMode input:focus{
+    background-color: #8888;
+    border-color: #8888;
+}
+
+.darkMode, .darkMode .card, .darkMode a, .darkMode input, .darkMode input:focus, .darkMode input::placeholder {
+    color: var(--cor-do-texto-dark);
+}

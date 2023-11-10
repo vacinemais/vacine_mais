@@ -61,7 +61,6 @@
 							<!-- Contact -->
 							<ul class="top-link">
 								<li><a href="#">Sobre Nós</a></li>
-								<li><a href="#">Serviços</a></li>
 								<li><a href="#">Contato</a></li>
 								<li><a href="#">FAQ</a></li>
 							</ul>
@@ -99,8 +98,7 @@
 								<div class="main-menu">
 									<nav class="navigation d-flex justify-content-center">
 										<ul class="nav menu">
-											<li><a href="#">Início</a></li>
-											<li><a href="#">Serviços</a></li>
+											<li><a href="index.html">Início</a></li>
 											<li><a href="#">Vacinação<i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
 													<li><a href="#">Carteira de Vacinação</a></li>
@@ -110,9 +108,6 @@
 												</ul>
 											</li>
 											<li><a href="#">Blogs<i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="blog-single.html">Blog Details</a></li>
-												</ul>
 											</li>
 										</ul>
 									</nav>
@@ -121,7 +116,7 @@
 							</div>
 							<div class="col-lg-3 col-12">
 								<div class="get-quote">
-									<a href="appointment.html" class="btn">Entrar</a>
+									<a href="appointment.html" class="btn btn-outline-primary">Entrar</a>
 								</div>
 							</div>
 						</div>
@@ -132,7 +127,152 @@
 		</header>
 		<!-- End Header Area -->
 		
+		<!-- Start Tabela Histórico Vacinações -->
 		
+		<section class="">
+			<div class="container">
+				<div class=" ">
+					<div class="card card-body mt-4 mb-5">
+						<h2>Histórico de Vacinas</h1>
+						
+			
+						<input id="input-filtro" type="text" class="form-control mt-3 mb-3" placeholder="Qual vacina você procura?">
+			
+						<table class="table table-hover table-striped">
+							<thead class="table-primary">
+								<tr>
+									<th>#ID</th>
+									<th>Nome</th>
+									<th>Dose</th>
+									<th>Fabricante</th>
+									<th>Data</th>
+									<th>Ações</th>
+								</tr>
+							</thead>
+							<tbody id="tabela-vacinas">
+								<tr>
+									<td>1</td>
+									<td>Sarampo</td>
+									<td>Dose 1</td>
+									<td>Fiocruz</td>
+									<td>20/10/2009</td>
+									<td>
+										<button class="btn btn-sm btn-outline-primary ">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Hepatite A</td>
+									<td>Dose 1</td>
+									<td>Instituto Butantan</td>
+									<td>20/12/2009</td>
+									<td>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Tétano</td>
+									<td>Dose 1</td>
+									<td>Instituto Butantan</td>
+									<td>05/01/2010</td>
+									<td>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Hepatite A</td>
+									<td>Dose 2</td>
+									<td>Instituto Butantan</td>
+									<td>20/02/2010</td>
+									<td>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
+									</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Febre Amarela</td>
+									<td>Dose 1</td>
+									<td>Fiocruz</td>
+									<td>05/04/2010</td>
+									<td>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
+									</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Tríplice Viral</td>
+									<td>Dose 1</td>
+									<td>Fiocruz</td>
+									<td>17/10/2011</td>
+									<td>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
+									</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>Hepatite B</td>
+									<td>Dose 1</td>
+									<td>Instituto Butantan</td>
+									<td>26/01/2012</td>
+									<td>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
+									</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>Hepatite B</td>
+									<td>Dose 2</td>
+									<td>Instituto Butantan</td>
+									<td>26/02/2012</td>
+									<td>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
+									</td>
+								</tr>
+
+								<tr>
+									<td>9</td>
+									<td>Hepatite B</td>
+									<td>Dose 3</td>
+									<td>Instituto Butantan</td>
+									<td>26/07/2012</td>
+									<td>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
+									</td>
+								</tr>
+
+								<tr>
+									<td>10</td>
+									<td>Tétano</td>
+									<td>Dose 2</td>
+									<td>Instituto Butantan</td>
+									<td>07/02/2020</td>
+									<td>
+										<button class="btn btn-sm btn-outline-primary">Editar</button>
+										<button class="btn btn-sm btn-outline-danger">Excluir</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+			
+				</div>
+			</div>
+		</section>
+		
+		
+		<!-- End Tabela Histórico Vacinações -->	
+
 		<!-- Start Newsletter Area -->
 		<section class="newsletter section">
 			<div class="container">
@@ -189,8 +329,8 @@
 									<div class="col-lg-6 col-md-6 col-12">
 										<ul>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Início</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Serviços</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Vacinação</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Blogs</a></li>
 												
 										</ul>
 									</div>
@@ -254,5 +394,7 @@
 		<script src="js/jquery.counterup.min.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
+
+		<script src="js/filtroTabela.js"></script>
     </body>
 </html>

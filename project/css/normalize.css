@@ -473,7 +473,7 @@ Preloader Area CSS
 .btn:hover{
 	color:#fff;
 }
-
+/* 
 .btn:before{
 	content: "";
 	position: absolute;
@@ -482,7 +482,7 @@ Preloader Area CSS
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #2C2D3F;
+	background: #3e7bd6;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
 	-webkit-transform-origin: 50%;
@@ -491,12 +491,12 @@ Preloader Area CSS
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
 	border-radius:4px;
-}
+} */
 
-.btn:hover:before{
+/* .btn:hover:before{
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
-}
+} */
 
 .section{
 	padding:100px 0;
