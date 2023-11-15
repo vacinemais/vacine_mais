@@ -1,0 +1,35 @@
+.dataTables_wrapper.no-footer .dataTables_scrollBody,
+table.dataTable thead th, table.dataTable thead td {
+    border: 0;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+
+.dataTables_filter label {
+    width: 98%;
+}
+
+.add-button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#carteira-vacinacao {
+    margin: 10px 0 30px 0;
+}
+
+#carteira-vacinacao-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#carteira-vacinacao-body {
+    width: 100%;
+}
