@@ -1,6 +1,6 @@
 const body = $('body');
 const darkModeBtn = $('#dark-mode-btn');
-const contatoLinkBtn = $('#contato-link-btn');
+const contatoLinkBtn = $('.contato-link-btn');
 const sobreNosLinkBtn = $('#sobre-nos-link-btn');
 
 darkModeBtn.click(function (e) { 
