@@ -33,7 +33,7 @@ Version:	1.1
 	+ Latest Blog CSS
 	+ Blog Single CSS
 	+ Blog Sidebar CSS
-* Appointment CSS
+* support CSS
 * Login CSS
 * Register CSS
 * Faq CSS
@@ -2727,36 +2727,36 @@ body{
 =====================*/
 
 /*==========================
-	Start Appointment CSS
+	Start support CSS
 ============================*/
-.appointment{
+.support{
 	background:#fff;
 	padding-top:100px;
 }
-.appointment.single-page {
+.support.single-page {
 	background: #fff;
 	padding-top: 100px 0;
 	padding: 0;
 	padding: 100px 0;
 }
-.appointment.single-page .appointment-inner {
+.support.single-page .support-inner {
 	padding: 40px;
 	box-shadow: 0px 0px 10px #00000024;
 	border-radius: 5px;
 }
-.appointment.single-page .title{}
-.appointment.single-page .title h3 {
+.support.single-page .title{}
+.support.single-page .title h3 {
 	font-size: 25px;
 	display: block;
 	margin-bottom: 10px;
 	font-weight:600;
 }
-.appointment.single-page .title p{}
-.appointment .form{
+.support.single-page .title p{}
+.support .form{
 	margin-top:30px;
 }
-.appointment .form .form-group{}
-.appointment .form input {
+.support .form .form-group{}
+.support .form input {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #eee;
@@ -2768,7 +2768,7 @@ body{
 	border-radius:0;
 	border-radius: 4px;
 }
-.appointment .form textarea{
+.support .form textarea{
 	width: 100%;
 	height:200px;
     padding: 18px;
@@ -2777,7 +2777,7 @@ body{
 	resize:none;
 	border-radius: 4px;
 }
-.appointment .form-group .nice-select{
+.support .form-group .nice-select{
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
@@ -2790,74 +2790,74 @@ body{
 	border-radius: 4px;
 	font-weight:400;
 }
-.appointment .form-group .nice-select::after {
+.support .form-group .nice-select::after {
 	right: 20px;
 	color: #757575;
 }
-.appointment .form-group .list{
+.support .form-group .list{
 	border-radius: 4px;
 }
-.appointment .form-group .list li{
+.support .form-group .list li{
 	color:#757575;
 	border-radius:0;
 }
-.appointment .form-group .list li.selected{
+.support .form-group .list li.selected{
 	color:#757575;
 	font-weight:400;
 }
-.appointment .form-group .list li:hover {
+.support .form-group .list li:hover {
 	color:#fff;
 	background: #1A76D1;
 }
-.appointment .appointment-image{}
-.appointment.single-page .button .btn{
+.support .support-image{}
+.support.single-page .button .btn{
 	width:100%;
 }
-.appointment .button .btn{
+.support .button .btn{
 	font-weight:500;
 }
-.appointment .button .btn:hover{
+.support .button .btn:hover{
 	color:#fff;
 }
-.appointment .form p{
+.support .form p{
 	margin-top: 10px;
 	color:#868686;
 }
-.appointment.single-page .work-hour{
+.support.single-page .work-hour{
 	background:#1A76D1;
 	padding: 40px;
 	box-shadow: 0px 0px 10px #00000024;
 	border-radius: 5px;
 }
-.appointment.single-page .work-hour h3 {
+.support.single-page .work-hour h3 {
 	font-size: 25px;
 	display: block;
 	font-weight:600;
 	margin-bottom: 20px;
 	color:#fff;
 }
-.appointment.single-page .time-sidual{
+.support.single-page .time-sidual{
 	margin-top:15px;
 }
-.appointment.single-page .time-sidual{
+.support.single-page .time-sidual{
 	overflow:hidden;
 }
-.appointment.single-page .time-sidual li {
+.support.single-page .time-sidual li {
 	display: block;
 	color: #fff;
 	width: 100%;
 	margin-bottom: 10px;
 }
-.appointment.single-page .time-sidual li span{
+.support.single-page .time-sidual li span{
 	display:inline-block;
 	float:right;
 }
-.appointment.single-page .day-head .time {
+.support.single-page .day-head .time {
 	font-weight: 400;
 	float: right;
 }
 /*==========================
-	End Appointment CSS
+	End support CSS
 ============================*/
 
 /*====================
