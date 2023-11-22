@@ -1,45 +1,47 @@
 const body = $('body');
 const darkModeBtn = $('#dark-mode-btn');
-const contatoLinkBtn = $('.contato-link-btn');
-const sobreNosLinkBtn = $('#sobre-nos-link-btn');
-const inicioLinkBtn = $('#inicio-link-btn');
-const notificacaoLinkBtn = $('#notificacao-link-btn');
+const contatoScrollBtn = $('.contato-scroll-btn');
+const sobreNosScrollBtn = $('.sobre-nos-scroll-btn');
+const inicioScrollBtn = $('.inicio-scroll-btn');
+const notificacaoScrollBtn = $('.notificacao-scroll-btn');
 
-darkModeBtn.click(function (e) { 
+const contatoLinkBtn = $('.contato-link-btn');
+
+darkModeBtn.click(function (e) {
     e.preventDefault();
     body.toggleClass('darkMode');
     darkModeBtn.text(body.hasClass('darkMode') ? 'Modo Claro' : 'Modo Escuro');
 });
 
-contatoLinkBtn.click(function (e) {
-    e.preventDefault();
-    
+function scrollAnimation(query) {
     $('html, body').animate({
-        scrollTop: $('.support').offset().top
+        scrollTop: $(query).offset().top
     }, 1000);
+}
+
+contatoScrollBtn.click(function (e) {
+    e.preventDefault();
+
+    scrollAnimation('.support');
 });
 
-sobreNosLinkBtn.click(function (e) {
+sobreNosScrollBtn.click(function (e) {
     e.preventDefault();
-    
-    $('html, body').animate({
-        scrollTop: $('#footer').offset().top
-    }, 1000);
+
+    scrollAnimation('#footer');
 });
 
-inicioLinkBtn.click(function (e) {
+inicioScrollBtn.click(function (e) {
     e.preventDefault();
-    
+
     $('html, body').animate({
         scrollTop: 0
     }, 1000);
 });
 
-notificacaoLinkBtn.click(function (e) {
+notificacaoScrollBtn.click(function (e) {
     e.preventDefault();
-    
-    $('html, body').animate({
-        scrollTop: $('.newsletter').offset().top
-    }, 1000);
+
+    scrollAnimation('.newsletter');
 });
 
