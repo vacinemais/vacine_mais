@@ -170,32 +170,15 @@ function atualizarLista(array) {
   });
 }
 
-function getVaccines() {
+function atualizarTabela() {
   $.ajax({
     type: 'GET',
     url: 'http://localhost:3000/vaccines',
     success: function (response) {
       let dbVacinas = [];
+      
       response.forEach((item, index) => {
-        const editButton = $("<button>")
-          .addClass("btn btn-sm btn-outline-primary mr-2")
-          .attr("data-bs-toggle", "modal")
-          .attr("data-bs-target", "#editar-vacina-modal")
-          .text("Editar")
-          .on("click", function() {
-            // Adicione aqui a lógica para manipular o evento de clique no botão "Editar"
-            console.log("Editar clicado para a vacina com ID: " + (index + 1));
-          });
-
-        const deleteButton = $("<button>")
-          .addClass("btn btn-sm btn-outline-danger")
-          .text("Excluir")
-          .on("click", function() {
-            // Adicione aqui a lógica para manipular o evento de clique no botão "Excluir"
-            console.log("Excluir clicado para a vacina com ID: " + (index + 1));
-          });
-
-        const actionsCell = $("<td>").append(editButton, deleteButton);
+        const actionsCell = '<td><button class="btn btn-sm btn-outline-primary mr-2" data-bs-toggle="modal" data-bs-target="#editar-vacina-modal">Editar</button><button class="btn btn-sm btn-outline-danger">Excluir</button></td>';
 
         const vacina = {
           "id": index + 1,
@@ -219,17 +202,27 @@ function getVaccines() {
           { data: 'manufacturer' },
           { data: 'date' },
           { data: 'actions'}
-        ]
+        ],
+        "oLanguage": {
+          "sSearch": ""
+        },
+        "lengthChange": false,
+        "pageLength": -1,
+        "paging": false,
+        "info": false,
+        "searching": true,
+        "scrollY": "350px",
+        "scrollCollapse": true,
       });
+
+      $('.dataTables_filter label input').addClass('form-control form-control-sm mt-3').attr('placeholder', 'Qual vacina você procura?');
     }
   });
 }
 
 
 $(document).ready(function () {
-  getVaccines();
-
-  $('.dataTables_filter label input').addClass('form-control form-control-sm mt-3').attr('placeholder', 'Qual vacina você procura?');
+  atualizarTabela();
 
   $('#form-adicionar-vacina').submit(function (e) {
     e.preventDefault();
