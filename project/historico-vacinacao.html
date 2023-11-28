@@ -191,7 +191,7 @@
 					<div class="modal-body">
 						<p>Modifique os campos abaixo para alterar os dados de uma vacina previamente cadastrada!
 						</p>
-						<form id="form-editar-vacina" method="post">
+						<form id="form-editar-vacina">
 							<div class="form-row">
 								<div class="form-group col-md-6">
 									<label for="ipVacinaNome">Nome</label>
@@ -211,7 +211,7 @@
 								<label for="ipVacinaData">Data</label>
 								<input type="date" class="form-control" id="ipVacinaData">
 							</div>
-							<button type="submit" class="btn btn-primary">Salvar</button>
+							<button class="btn btn-primary btn-close" data-bs-dismiss="modal" onclick="atualizarVacina()">Salvar</button>
 						</form>
 					</div>
 				</div>

@@ -85,9 +85,24 @@ function atualizarTabela() {
   });
 }
 
+function editarVacina(button) {
+  let row = button.closest('tr');
+  let elements = row.find('td');
+
+  editName = elements[1].innerText;
+  editDose = elements[2].innerText;
+  editManufacturer = elements[3].innerText;
+  editDate = elements[4].innerText;
+
+  $('#form-editar-vacina #ipVacinaNome').val(editName);
+  $('#form-editar-vacina #ipVacinaDose').val(editDose);
+  $('#form-editar-vacina #ipVacinaFabricante').val(editManufacturer);
+  $('#form-editar-vacina #ipVacinaData').val(editDate);
+}
+
 function deletarVacina(button) {
-  var row = button.closest('tr');
-  var elements = row.find('td');
+  let row = button.closest('tr');
+  let elements = row.find('td');
 
   let name = elements[1].innerText;
   let dose = elements[2].innerText;
@@ -106,17 +121,41 @@ function deletarVacina(button) {
   });
 }
 
+function atualizarVacina() {
+  let formData = {
+    name: $('#form-editar-vacina #ipVacinaNome').val(),
+    dose: $('#form-editar-vacina #ipVacinaDose').val(),
+    manufacturer: $('#form-editar-vacina #ipVacinaFabricante').val(),
+    date: $('#form-editar-vacina #ipVacinaData').val()
+  };
+
+  $.ajax({
+    type: 'PUT',
+    url: `http://localhost:3000/vaccine/${editName}/${editDose}/${editManufacturer}/${editDate}`,
+    data: formData,
+    success: function (response) {
+      console.log('Sucesso:', response);
+      location.reload();
+    },
+    error: function (error) {
+      console.error('Erro:', error);
+    }
+  });
+}
+
 $(document).ready(function () {
   atualizarTabela();
+
+  let editName, editDose, editManufacturer, editDate;
 
   $('#form-adicionar-vacina').submit(function (e) {
     e.preventDefault();
 
-    var formData = {
-      name: $('#ipVacinaNome').val(),
-      dose: $('#ipVacinaDose').val(),
-      manufacturer: $('#ipVacinaFabricante').val(),
-      date: $('#ipVacinaData').val()
+    let formData = {
+      name: $('#form-adicionar-vacina #ipVacinaNome').val(),
+      dose: $('#form-adicionar-vacina #ipVacinaDose').val(),
+      manufacturer: $('#form-adicionar-vacina #ipVacinaFabricante').val(),
+      date: $('#form-adicionar-vacina #ipVacinaData').val()
     };
 
     $.ajax({
@@ -124,7 +163,7 @@ $(document).ready(function () {
       url: 'http://localhost:3000/vaccine',
       data: formData,
       success: function (response) {
-        console.log('Sucesso:', response); 
+        console.log('Sucesso:', response);
         location.reload();
       },
       error: function (error) {
