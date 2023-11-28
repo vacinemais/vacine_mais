@@ -38,7 +38,7 @@ function atualizarLista(array) {
 function atualizarTabela() {
   $.ajax({
     type: 'GET',
-    url: 'http://localhost:3000/vaccines',
+    url: 'https://historico-vacinacao-api.onrender.com/vaccines',
     success: function (response) {
       let dbVacinas = [];
 
@@ -131,7 +131,7 @@ function atualizarVacina() {
 
   $.ajax({
     type: 'PUT',
-    url: `http://localhost:3000/vaccine/${editName}/${editDose}/${editManufacturer}/${editDate}`,
+    url: `https://historico-vacinacao-api.onrender.com/${editName}/${editDose}/${editManufacturer}/${editDate}`,
     data: formData,
     success: function (response) {
       console.log('Sucesso:', response);
@@ -160,7 +160,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: 'POST',
-      url: 'http://localhost:3000/vaccine',
+      url: 'https://historico-vacinacao-api.onrender.com/vaccine',
       data: formData,
       success: function (response) {
         console.log('Sucesso:', response);
