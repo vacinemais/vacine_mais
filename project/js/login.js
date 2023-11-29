@@ -8,7 +8,7 @@ function logar() {
     
     $.ajax({
       type: 'GET',
-      url: `http://localhost:7123/user/${email}`,
+      url: `https://api-cadastro-vacine-mais.onrender.com/${email}`,
       success: function (response) {
         console.log('Sucesso:', response);
         location.reload();

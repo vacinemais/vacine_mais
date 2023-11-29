@@ -111,7 +111,7 @@ function deletarVacina(button) {
 
   $.ajax({
     type: 'DELETE',
-    url: `http://localhost:3000/vaccine/${name}/${dose}/${manufacturer}/${date}`,
+    url: `https://api-historico-vacine-mais.onrender.com/vaccine/${name}/${dose}/${manufacturer}/${date}`,
     success: function (response) {
       location.reload();
     },
@@ -131,7 +131,7 @@ function atualizarVacina() {
 
   $.ajax({
     type: 'PUT',
-    url: `https://historico-vacinacao-api.onrender.com/${editName}/${editDose}/${editManufacturer}/${editDate}`,
+    url: `https://api-historico-vacine-mais.onrender.com/${editName}/${editDose}/${editManufacturer}/${editDate}`,
     data: formData,
     success: function (response) {
       console.log('Sucesso:', response);
@@ -160,7 +160,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: 'POST',
-      url: 'https://historico-vacinacao-api.onrender.com/vaccine',
+      url: 'https://api-historico-vacine-mais.onrender.com/vaccine',
       data: formData,
       success: function (response) {
         console.log('Sucesso:', response);
