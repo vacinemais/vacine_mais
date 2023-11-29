@@ -43,12 +43,12 @@ $(document).ready(function () {
       });
 });
 
-function logar(){
+function logar() {
     let email =  $('#entrar-form #ip-email').val()
     
     $.ajax({
       type: 'GET',
-      url: `localhost:7123/user/${email}`,
+      url: `http://localhost:7123/user/${email}`,
       success: function (response) {
         console.log('Sucesso:', response);
         location.reload();
@@ -57,5 +57,4 @@ function logar(){
         console.error('Erro:', error);
       }
     });
-
 }
