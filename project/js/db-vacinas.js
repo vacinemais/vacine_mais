@@ -38,7 +38,7 @@ function atualizarLista(array) {
 function atualizarTabela() {
   $.ajax({
     type: 'GET',
-    url: 'https://historico-vacinacao-api.onrender.com/vaccines',
+    url: 'https://api-historico-vacine-mais.onrender.com/vaccines',
     success: function (response) {
       let dbVacinas = [];
 
