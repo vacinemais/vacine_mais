@@ -36,26 +36,16 @@ $(document).ready(function () {
         cadastrarForm.show();
     });
     
-    $('#entrar-form form').submit(function (e) {
-        e.preventDefault();
+    // $('#entrar-form form').submit(function (e) {
+    //     e.preventDefault();
     
-        let formData = {
-          email: $('#entrar-form #ip-email').val(),
-          password: $('#entrar-form #ip-senha').val(),
-        };
-        let email =  $('#entrar-form #ip-email').val()
+    //     let formData = {
+    //       email: $('#entrar-form #ip-email').val(),
+    //       password: $('#entrar-form #ip-senha').val(),
+    //     };
+    //     let email =  $('#entrar-form #ip-email').val()
     
-        $.ajax({
-          type: 'GET',
-          url: `localhost:7123/user/${email}`,
-          success: function (response) {
-            console.log('Sucesso:', response);
-            location.reload();
-          },
-          error: function (error) {
-            console.error('Erro:', error);
-          }
-        });
-      });
+      
+    //   });
 });
 
