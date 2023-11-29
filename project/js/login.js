@@ -3,6 +3,22 @@ const btnSelectCadastrar = $("#btn-select-cadastrar");
 const entrarForm = $("#entrar-form");
 const cadastrarForm = $("#cadastrar-form");
 
+function logar() {
+    let email =  $('#entrar-form #ip-email').val()
+    
+    $.ajax({
+      type: 'GET',
+      url: `http://localhost:7123/user/${email}`,
+      success: function (response) {
+        console.log('Sucesso:', response);
+        location.reload();
+      },
+      error: function (error) {
+        console.error('Erro:', error);
+      }
+    });
+}
+
 $(document).ready(function () {
     // Inicialmente, exibir o formulário de login e ocultar o de registro
     entrarForm.show();
@@ -43,18 +59,3 @@ $(document).ready(function () {
       });
 });
 
-function logar() {
-    let email =  $('#entrar-form #ip-email').val()
-    
-    $.ajax({
-      type: 'GET',
-      url: `http://localhost:7123/user/${email}`,
-      success: function (response) {
-        console.log('Sucesso:', response);
-        location.reload();
-      },
-      error: function (error) {
-        console.error('Erro:', error);
-      }
-    });
-}
