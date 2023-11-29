@@ -19,4 +19,43 @@ $(document).ready(function () {
         entrarForm.hide();
         cadastrarForm.show();
     });
+    
+    $('#entrar-form form').submit(function (e) {
+        e.preventDefault();
+    
+        let formData = {
+          email: $('#entrar-form #ip-email').val(),
+          password: $('#entrar-form #ip-senha').val(),
+        };
+        let email =  $('#entrar-form #ip-email').val()
+    
+        $.ajax({
+          type: 'GET',
+          url: `localhost:7123/user/${email}`,
+          success: function (response) {
+            console.log('Sucesso:', response);
+            location.reload();
+          },
+          error: function (error) {
+            console.error('Erro:', error);
+          }
+        });
+      });
 });
+
+function logar(){
+    let email =  $('#entrar-form #ip-email').val()
+    
+    $.ajax({
+      type: 'GET',
+      url: `localhost:7123/user/${email}`,
+      success: function (response) {
+        console.log('Sucesso:', response);
+        location.reload();
+      },
+      error: function (error) {
+        console.error('Erro:', error);
+      }
+    });
+
+}
