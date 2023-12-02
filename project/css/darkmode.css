@@ -2,11 +2,13 @@
     --cor-primaria: #007bff;
     --cor-de-fundo-light: #f5f5f5;
     --cor-de-fundo-dark: #2b2b2b;
-    --cor-do-texto-light: #0000;
+    --cor-do-texto-light: black;
     --cor-do-texto-dark: #f5f5f5;
     --cor-da-borda-light: #e3e3e3;
     --cor-da-borda-dark: #6666;
     --cor-botao-light: #2b2b2b;
+    --cor-de-fundo--one: rgb(104, 104, 104);
+    --cor-de-fundo--two: rgb(161, 161, 161);
 }
 
 #dark-mode-btn {
@@ -18,10 +20,14 @@
     z-index: 999;
 }
 
+
+
 .darkMode {
     background-color: var(--cor-de-fundo-dark);
     
 }
+
+
 
 .darkMode .card {
     background-color: var(--cor-da-borda-dark);
@@ -40,11 +46,68 @@
     border-color: var(--cor-primaria);
 }
 
-.darkMode input, .darkMode input:focus{
+
+
+.darkMode input, .darkMode input:focus,.darkMode .support .form-group .nice-select, .darkMode .support .form input, .darkMode .support .form textarea, .darkMode .newsletter .common-input{
     background-color: #8888;
     border-color: #8888;
 }
 
-.darkMode, .darkMode .card, .darkMode a, .darkMode input, .darkMode input:focus, .darkMode input::placeholder {
+.darkMode, .darkMode .card, .darkMode a, .darkMode input, .darkMode input:focus, .darkMode input::placeholder, .darkMode .support .form-group .nice-select, .darkMode .support .form textarea::placeholder, .darkMode .support .form p, .darkMode .newsletter .subscribe-text h6, .darkMode .newsletter .subscribe-text p  {
     color: var(--cor-do-texto-dark);
 }
+
+
+
+#dark-mode-btn2 {
+    background-color: var(--cor-botao-light);
+    border-color: var(--cor-botao-light);
+    position: absolute;
+    margin-left: 15px;
+}
+
+.darkMode #dark-mode-btn2 {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.darkMode .topbar, .darkMode .header-inner, .darkMode .copyright  {
+    background-color: var(--cor-do-texto-light);
+    
+}
+
+.darkMode .schedule, .darkMode .blog.section, .darkMode .newsletter, .darkMode .Feautes, .darkMode .support{
+    background-color: var(--cor-de-fundo--one);
+}
+
+.darkMode .header .top-link li a, .darkMode .header .top-contact li, .darkMode .header .top-contact li a, .darkMode .header .nav li a {
+    color: rgb(155, 155, 155);
+}
+
+
+.darkMode .schedule .single-schedule span, .darkMode .schedule .single-schedule h4, .darkMode .schedule .single-schedule p, .darkMode .schedule .single-schedule a, .darkMode .schedule .single-schedule .time-sidual li, .darkMode .section-title p, .darkMode .Feautes .single-features p, .darkMode .fun-facts .single-fun i, .darkMode .fun-facts .single-fun span, .darkMode .fun-facts .single-fun p,.blog .single-news .news-body h2 a, .darkMode p, .darkMode .blog .single-news .news-body .date, .darkMode .footer .single-footer h2 , .darkMode .footer .single-footer p, .darkMode .footer .single-footer.f-link li a, .darkMode .footer .single-footer .time-sidual li   {
+    color: black;
+}
+
+.darkMode .footer .single-footer h2::before{
+    background-color: black;
+}
+
+.darkMode .blog .single-news .news-content{
+    background-color: rgb(90, 90, 90);
+}
+
+.darkMode .table-primary{
+    background-color: #005bbd;
+    color: black;
+}
+
+.darkMode #carteira-vacinacao-title{
+    color:  black;
+}
+
+.darkMode .btn-success{
+ background-color: #007bff;
+ border-color:#007bff ;
+}
+

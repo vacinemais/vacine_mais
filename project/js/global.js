@@ -1,5 +1,6 @@
 const body = $('body');
 const darkModeBtn = $('#dark-mode-btn');
+const darkModeBtn2 = $('#dark-mode-btn2');
 const contatoScrollBtn = $('.contato-scroll-btn');
 const sobreNosScrollBtn = $('.sobre-nos-scroll-btn');
 const inicioScrollBtn = $('.inicio-scroll-btn');
@@ -11,6 +12,12 @@ darkModeBtn.click(function (e) {
     e.preventDefault();
     body.toggleClass('darkMode');
     darkModeBtn.text(body.hasClass('darkMode') ? 'Modo Claro' : 'Modo Escuro');
+});
+
+darkModeBtn2.click(function (e) {
+    e.preventDefault();
+    body.toggleClass('darkMode');
+    darkModeBtn2.text(body.hasClass('darkMode') ? 'Modo Claro' : 'Modo Escuro');
 });
 
 function scrollAnimation(query) {
