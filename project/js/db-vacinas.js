@@ -85,21 +85,6 @@ function atualizarTabela() {
   });
 }
 
-function editarVacina(button) {
-  let row = button.closest('tr');
-  let elements = row.find('td');
-
-  editName = elements[1].innerText;
-  editDose = elements[2].innerText;
-  editManufacturer = elements[3].innerText;
-  editDate = elements[4].innerText;
-
-  $('#form-editar-vacina #ipVacinaNome').val(editName);
-  $('#form-editar-vacina #ipVacinaDose').val(editDose);
-  $('#form-editar-vacina #ipVacinaFabricante').val(editManufacturer);
-  $('#form-editar-vacina #ipVacinaData').val(editDate);
-}
-
 function deletarVacina(button) {
   let row = button.closest('tr');
   let elements = row.find('td');
@@ -121,6 +106,23 @@ function deletarVacina(button) {
   });
 }
 
+function editarVacina(button) {
+  let row = button.closest('tr');
+  let elements = row.find('td');
+
+  editName = elements[1].innerText;
+  editDose = elements[2].innerText;
+  editManufacturer = elements[3].innerText;
+  editDate = elements[4].innerText;
+
+  $('#form-editar-vacina #ipVacinaNome').val(editName);
+  $('#form-editar-vacina #ipVacinaDose').val(editDose);
+  $('#form-editar-vacina #ipVacinaFabricante').val(editManufacturer);
+  $('#form-editar-vacina #ipVacinaData').val(editDate);
+}
+
+
+
 function atualizarVacina() {
   let formData = {
     name: $('#form-editar-vacina #ipVacinaNome').val(),
@@ -131,7 +133,7 @@ function atualizarVacina() {
 
   $.ajax({
     type: 'PUT',
-    url: `https://api-historico-vacine-mais.onrender.com/${editName}/${editDose}/${editManufacturer}/${editDate}`,
+    url: `https://api-historico-vacine-mais.onrender.com/vaccine/${editName}/${editDose}/${editManufacturer}/${editDate}`,
     data: formData,
     success: function (response) {
       console.log('Sucesso:', response);
