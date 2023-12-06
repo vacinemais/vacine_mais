@@ -121,9 +121,8 @@ function editarVacina(button) {
   $('#form-editar-vacina #ipVacinaData').val(editDate);
 }
 
-
-
 function atualizarVacina() {
+  console.log("chamando metodo")
   let formData = {
     name: $('#form-editar-vacina #ipVacinaNome').val(),
     dose: $('#form-editar-vacina #ipVacinaDose').val(),
@@ -143,6 +142,7 @@ function atualizarVacina() {
       console.error('Erro:', error);
     }
   });
+
 }
 
 $(document).ready(function () {
@@ -165,7 +165,7 @@ $(document).ready(function () {
       url: 'https://api-historico-vacine-mais.onrender.com/vaccine',
       data: formData,
       success: function (response) {
-        console.log('Sucesso:', response);
+        console.log("sucesso")
         location.reload();
       },
       error: function (error) {
